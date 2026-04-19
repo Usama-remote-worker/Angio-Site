@@ -121,8 +121,8 @@ export default function Services() {
           </div>
           <div className="relative aspect-video shadow-2xl overflow-hidden border-8 border-white/10 group">
               <Image 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfsgQM3v0raKlsEyHbFN-3EpuaDTJjjmhSimJa02es9z5BJpuWyevQ_LKnyJf8ewtAEEa1Xr3NIxcynuMnO5R2hYFxQZ6jX5jl3opnTwpx8clKzLo4gnfSj3a7apYREvOfsJ0fU5gqibA5sKo9Hp9uBWmVpFOFJZZaBaGmUuqXcIdOZYUArVM58Ef8eWCooQETusx0GIGxK69eEswa2I3zXU9pKhjxcBP-rE-qt3NNu-5z_dS2N12QbLOm4Pso1R2OPUvVzsRB3ec"
-                alt="Projects Overview Reference"
+                src="/images/ambulance.jpg"
+                alt="Foaz-o-Falah Foundation Ambulance Service"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-1000"
               />

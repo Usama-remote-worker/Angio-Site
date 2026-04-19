@@ -206,8 +206,8 @@ export default function Home() {
             <div className="border border-outline-variant hover:border-primary transition-colors group">
               <div className="h-56 overflow-hidden relative">
                 <Image 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr9gjXsCrI3xbK08FGa5I-EKiZ9SVsGlZY2_Sw84ZN5JW_z6ap0cRagC4lzkYQRjvEMg_6NeTGqShQ2Rhgl3u2Sv0cOr-nLP8zJ10Ls1210KWFfuKniuIrP6Uhq8RfCNQxKJ8kuG6M4WrRS7IiXt7rmCBqiT73x0ohUBz7q_96ZRAMEaeXGJNKHa7EfEuRmkOGYtWJnYBoqQwNwHjYrRESurso1R-ut1V4GAAijiGSy28fZKQw62_XgWXgJTXhShzRAVlYoMpfizU"
-                  alt="Food & Ration"
+                  src="/images/ration.jpg"
+                  alt="Food & Ration distribution"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -250,8 +250,8 @@ export default function Home() {
             <div className="border border-outline-variant hover:border-primary transition-colors group">
               <div className="h-56 overflow-hidden relative">
                 <Image 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqQ818gfek3OOnRbCdbUPtMOa2bMKUbDAYJL2_nbH0KS2qdMIn8XJ-25nfIZawbmXqJlZhTc98GJudWGkrepviMcJu30UizH4qM-o2zRh1Kr97uklobERJDIF5QNB5SfzxOKmsRNXCzBhfMR5vT8cqse-Z1dpdOn4OelSNeqGdIGmhzOy0F-GJcHfHbSy2Ri1zcgyIupqodlavAeHfwFlNfDbX-LmuXfgEH1HP-vJRrVz4N-V7p4R9ADjxsBqvK2Ers6T_psc_9Kw"
-                  alt="Orphan Support"
+                  src="/images/health-child.jpg"
+                  alt="Children receiving medical support"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
