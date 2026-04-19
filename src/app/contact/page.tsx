@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Send, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Send, Phone, Mail, MapPin, Clock, Facebook, Youtube } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -64,6 +64,28 @@ export default function Contact() {
                   </div>
                 </div>
               ))}
+            <div className="pt-12 border-t border-outline-variant space-y-6">
+              <h4 className="font-bold text-on-surface text-lg uppercase tracking-widest">Connect With Us</h4>
+              <div className="flex gap-4">
+                <a 
+                  href="https://www.facebook.com/foazofalah" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 bg-surface-container-low px-6 py-3 hover:bg-primary hover:text-white transition-all group"
+                >
+                  <Facebook size={20} className="text-primary group-hover:text-white" />
+                  <span className="font-bold text-sm">Facebook</span>
+                </a>
+                <a 
+                  href="https://www.youtube.com/@foazofalahfoundation" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 bg-surface-container-low px-6 py-3 hover:bg-primary hover:text-white transition-all group"
+                >
+                  <Youtube size={20} className="text-primary group-hover:text-white" />
+                  <span className="font-bold text-sm">YouTube</span>
+                </a>
+              </div>
             </div>
           </div>
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Facebook, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -25,6 +26,26 @@ export default function Footer() {
           <Link href="/volunteer" className="text-on-surface-variant hover:text-primary underline transition-all">
             Volunteer Portal
           </Link>
+        </div>
+        <div className="flex items-center gap-6 mt-4 md:mt-0">
+          <a 
+            href="https://www.facebook.com/foazofalah" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-10 h-10 bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-white transition-all rounded-full shadow-sm"
+            aria-label="Follow us on Facebook"
+          >
+            <Facebook size={20} />
+          </a>
+          <a 
+            href="https://www.youtube.com/@foazofalahfoundation" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-10 h-10 bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-white transition-all rounded-full shadow-sm"
+            aria-label="Subscribe on YouTube"
+          >
+            <Youtube size={20} />
+          </a>
         </div>
       </div>
     </footer>
