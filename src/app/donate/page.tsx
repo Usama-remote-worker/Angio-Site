@@ -1,10 +1,23 @@
 import { Heart, Landmark, Phone, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Donate() {
   return (
     <div className="pt-24 pb-24">
       <section className="section-container text-center mb-16 space-y-6">
+        <div className="relative h-[300px] mb-12 overflow-hidden shadow-xl rounded-sm">
+          <Image 
+            src="/images/ration-boxes.jpg"
+            alt="Foundation supplies ready for distribution"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <h1 className="text-5xl md:text-7xl font-bold text-white uppercase tracking-tighter">Help Pakistan</h1>
+          </div>
+        </div>
         <span className="text-primary text-sm font-bold tracking-[0.2em] block uppercase">Support Our Cause</span>
         <h1 className="text-5xl md:text-6xl font-bold text-on-surface">Every Contribution Counts</h1>
         <p className="text-on-surface-variant text-lg max-w-2xl mx-auto leading-relaxed">
@@ -55,8 +68,15 @@ export default function Donate() {
         </div>
       </div>
 
-      <section className="section-container bg-on-background text-white p-16 relative overflow-hidden text-center">
-        <div className="absolute top-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2" />
+      <section className="section-container text-white p-16 relative overflow-hidden text-center rounded-sm">
+        <div className="absolute inset-0">
+          <Image 
+            src="/images/rescue.jpg"
+            alt="Rescue operations"
+            fill
+            className="object-cover brightness-[0.25]"
+          />
+        </div>
         <div className="relative z-10 space-y-8 max-w-3xl mx-auto">
           <div className="w-20 h-20 bg-primary/20 flex items-center justify-center text-primary mx-auto rounded-full">
             <Heart size={40} fill="currentColor" />

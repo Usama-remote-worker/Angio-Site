@@ -69,6 +69,23 @@ export default function Volunteer() {
         </div>
       </section>
 
+      <section className="section-container mb-24">
+        <div className="relative h-[400px] overflow-hidden shadow-2xl group">
+          <Image 
+            src="/images/compassion.jpg"
+            alt="Making a difference in the community"
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-[2s]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent flex items-center p-12">
+            <div className="max-w-md text-white space-y-4">
+              <h3 className="text-3xl font-bold">Your hands can change a life.</h3>
+              <p className="opacity-90">Join MA Raheemi and our team of dedicated field workers in bringing relief to the doorstep of those who need it most.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section-container">
         <div className="bg-primary text-on-primary p-12 md:p-20 text-center space-y-8 relative overflow-hidden">
           <div className="absolute inset-0 bg-black/10 opacity-20 transform -skew-x-12 translate-x-1/2" />

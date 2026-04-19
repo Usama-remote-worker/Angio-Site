@@ -5,6 +5,8 @@ import {
   GraduationCap, 
   Wrench, 
   Trophy, 
+  ShieldAlert,
+  Users,
   Phone, 
   Mail, 
   MapPin,
