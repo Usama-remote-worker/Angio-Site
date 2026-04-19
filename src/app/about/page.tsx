@@ -89,7 +89,15 @@ export default function About() {
 
       {/* Founder's Vision */}
       <section className="bg-on-background text-white py-24 section-container relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+        <div className="absolute inset-0 opacity-20">
+          <Image 
+            src="/images/founder-tent.jpg"
+            alt="Founder in action"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold">Founder&apos;s Vision</h2>
@@ -101,8 +109,8 @@ export default function About() {
           <div className="flex flex-col items-center">
             <div className="w-24 h-24 bg-surface-container rounded-full mb-6 border-4 border-white/20 flex items-center justify-center overflow-hidden relative">
                <Image 
-                  src="/images/relief-carry.jpg"
-                  alt="CEO vision icon"
+                  src="/images/compassion.jpg"
+                  alt="Aziz-ur-Rehman, Founder of Foaz-o-Falah Foundation"
                   fill
                   className="object-cover"
                />

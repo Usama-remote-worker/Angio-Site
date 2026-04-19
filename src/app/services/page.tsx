@@ -162,7 +162,31 @@ export default function Services() {
                  <p className="text-white/80 text-sm">Ground workers planning rehabilitation.</p>
               </div>
            </div>
-           <div className="relative aspect-[4/3] bg-surface-container-low group overflow-hidden border border-outline-variant hover:border-primary transition-colors flex items-center justify-center p-8 text-center">
+           <div className="relative aspect-[4/3] bg-surface-container-low group overflow-hidden border border-outline-variant">
+              <Image 
+                src="/images/ration-boxes.jpg"
+                alt="Branded ration distribution boxes"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                 <h4 className="text-white font-bold text-lg">Supply Chain</h4>
+                 <p className="text-white/80 text-sm">Organized distribution of essential goods.</p>
+              </div>
+           </div>
+           <div className="relative aspect-[4/3] bg-surface-container-low group overflow-hidden border border-outline-variant">
+              <Image 
+                src="/images/relief-carry.jpg"
+                alt="Individual relief package delivery"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                 <h4 className="text-white font-bold text-lg">Direct Relief</h4>
+                 <p className="text-white/80 text-sm">Door-to-door assistance for families.</p>
+              </div>
+           </div>
+           <div className="relative aspect-[4/3] bg-surface-container-low group overflow-hidden border border-outline-variant hover:border-primary transition-colors flex items-center justify-center p-8 text-center md:col-span-2 lg:col-span-1">
               <div>
                  <HeartPulse className="w-12 h-12 text-primary mx-auto mb-4" />
                  <h4 className="text-xl font-bold mb-2">Join the Impact</h4>
