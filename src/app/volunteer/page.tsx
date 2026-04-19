@@ -1,4 +1,4 @@
-import { Users, Heart, GraduationCap, ShieldCheck, ArrowRight } from "lucide-react";
+import { Heart, GraduationCap, ShieldCheck, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
