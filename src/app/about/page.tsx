@@ -110,12 +110,12 @@ export default function About() {
             <div className="w-24 h-24 bg-surface-container rounded-full mb-6 border-4 border-white/20 flex items-center justify-center overflow-hidden relative">
                <Image 
                   src="/images/compassion.jpg"
-                  alt="Aziz-ur-Rehman, Founder of Foaz-o-Falah Foundation"
+                  alt="MA Raheemi, Founder of Foaz-o-Falah Foundation"
                   fill
                   className="object-cover"
                />
             </div>
-            <h4 className="text-2xl font-bold tracking-widest uppercase">Aziz-ur-Rehman</h4>
+            <h4 className="text-2xl font-bold tracking-widest uppercase">MA Raheemi</h4>
             <p className="text-primary font-bold mt-2">CEO & Founder, Foaz-o-Falah Foundation</p>
           </div>
         </div>
