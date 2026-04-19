@@ -22,8 +22,8 @@ export default function Volunteer() {
           </div>
           <div className="relative aspect-video lg:aspect-square overflow-hidden shadow-2xl">
              <Image 
-               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxSgqwLOh95jJIpkmkBkncRK3uOWaDkT6gEnVoi13J8jJW8gSQZnh8KXbuHZ0l9fo_bxHZGVrVlXgBLleyJkc-6j82FcEAXtW6inFkMi_R6dE36uvnbihQw1B7KfanJVz8hjLv28cjlP-qWkSWtC4PrFMwNwLYX1WHwiOiLDiJN6kIkr4w2_ku0bLudNgErQHJ8CF1REQgpcLb1_rT1laC4-t96AF9q1r5n23a1bG2czuYCzJSpGeUWjjwQ_Q1WFhX8LXlSP1RJIU"
-               alt="Volunteers in action"
+               src="/images/shelter.jpg"
+               alt="Foundation workers distributing relief materials"
                fill
                className="object-cover"
              />

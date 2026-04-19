@@ -155,30 +155,30 @@ export default function Home() {
             <div className="col-span-12 md:col-span-4 bg-white p-8 border-t-4 border-tertiary shadow-sm relative overflow-hidden group">
               <div className="absolute inset-0 opacity-10 transition-transform duration-500 group-hover:scale-110">
                 <Image 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa9nE6GKXOGUJtW3Wl-hefudJOjPa4nMXSPw1Zw7iUcN2389GpLVbvT_g1NaxfY-aJ5JvkfhC3_5giC-Lfu7bc4qXAdOw_q82Zqh4B6lqdOAiOMyiylq_ETPfnzhtiSrO3LfLDyGPiOy-0vWLSPlnby-hMAKnc0WzrDiOJbLY2yu0SjIX_Fb3zToz364KFOqFg6WqZ5veLOu8-55veisl2IIFE_gj30mqjlPDh3dYkR1aanmNEUPdYi_aYHyr06HQ9iRhArjHCSdU"
-                  alt="Technical Training"
+                  src="/images/rescue.jpg"
+                  alt="Emergency Disaster Relief"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="relative z-10">
-                <Wrench className="text-tertiary w-12 h-12 mb-4" />
-                <h3 className="text-3xl font-bold mb-2">Technical Training</h3>
-                <p className="text-on-surface-variant">Vocational centers empowering youth with modern employability skills.</p>
+                <ShieldAlert className="text-tertiary w-12 h-12 mb-4" />
+                <h3 className="text-3xl font-bold mb-2">Emergency Relief</h3>
+                <p className="text-on-surface-variant">Immediate rescue and life-saving assistance during natural disasters and floods.</p>
               </div>
             </div>
             {/* Sector 4 */}
             <div className="col-span-12 md:col-span-8 bg-white p-8 group relative overflow-hidden flex items-center shadow-sm">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full relative z-10">
                 <div>
-                  <Trophy className="text-primary w-12 h-12 mb-4" />
-                  <h3 className="text-3xl font-bold mb-2">Youth Sports</h3>
-                  <p className="text-on-surface-variant">Promoting healthy lifestyles and teamwork through community sports leagues.</p>
+                  <Users className="text-primary w-12 h-12 mb-4" />
+                  <h3 className="text-3xl font-bold mb-2">Youth Growth</h3>
+                  <p className="text-on-surface-variant">Empowering the next generation through community support and character building activities.</p>
                 </div>
                 <div className="relative h-48 md:h-full min-h-[200px]">
                   <Image 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfsgQM3v0raKlsEyHbFN-3EpuaDTJjjmhSimJa02es9z5BJpuWyevQ_LKnyJf8ewtAEEa1Xr3NIxcynuMnO5R2hYFxQZ6jX5jl3opnTwpx8clKzLo4gnfSj3a7apYREvOfsJ0fU5gqibA5sKo9Hp9uBWmVpFOFJZZaBaGmUuqXcIdOZYUArVM58Ef8eWCooQETusx0GIGxK69eEswa2I3zXU9pKhjxcBP-rE-qt3NNu-5z_dS2N12QbLOm4Pso1R2OPUvVzsRB3ec"
-                    alt="Youth sports"
+                    src="/images/community.jpg"
+                    alt="Youth Development"
                     fill
                     className="object-cover"
                   />
@@ -206,8 +206,8 @@ export default function Home() {
             <div className="border border-outline-variant hover:border-primary transition-colors group">
               <div className="h-56 overflow-hidden relative">
                 <Image 
-                  src="/images/ration.jpg"
-                  alt="Food & Ration distribution"
+                  src="/images/eid-ration.jpg"
+                  alt="Eid-ul-Adha Ration Distribution"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
