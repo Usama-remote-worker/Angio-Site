@@ -3,60 +3,67 @@ import { CheckCircle2, Target, Eye, Users2 } from "lucide-react";
 
 export default function About() {
   const aims = [
+    "Establishing modern hospitals and blood banks for accessible specialized medical treatment.",
+    "Building educational institutes and technical training centers for self-reliance.",
+    "Providing free legal aid and justice support for the oppressed and victims of social injustice.",
+    "Promoting interfaith harmony and peaceful co-existence across all societal segments.",
+    "Emergency response during natural disasters, pandemics, and civil crises.",
+    "Organizing mass marriage ceremonies and dowry support for low-income families.",
     "Providing food, shelter and medical assistance to victims of disasters.",
     "Providing first-aid training to the youth.",
-    "Creation of hospitals, dispensaries, and mother/child care centers.",
-    "Providing free medicines and ambulance services to the public.",
-    "Establishing schools, colleges, and vocational training centers.",
-    "Financial and moral assistance to orphan and poor students.",
+    "Financial and moral assistance to orphan and poor students."
   ];
 
   return (
-    <div className="pt-32 pb-24">
+    <div className="pt-24 pb-24">
       {/* Intro Section */}
       <section className="section-container mb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div className="space-y-6">
-            <h1 className="text-5xl font-serif font-bold text-neutral">Our Story & Mission</h1>
-            <p className="text-neutral/70 leading-relaxed">
-              We the Foaz o Falah Foundation are working for the welfare and prosperity of our beloved country of Pakistan and in this regard we are engaging our workers to give relief to the victims of extremism, and for the rehabilitation of affected peoples from unwanted disaster.
-            </p>
-            <p className="text-neutral/70 leading-relaxed">
-              We also make efforts for the welfare of low income general public like their education, food, shelter, and clothing. The Foaz o Falah Foundation is a non government organization (NGO) which is working according to the given Laws of Government of Pakistan.
-            </p>
+          <div className="space-y-8">
+            <span className="text-primary text-sm font-bold tracking-[0.2em] block">OUR STORY</span>
+            <h1 className="text-5xl md:text-6xl font-bold text-on-surface leading-tight">Upholding Humanity Since 2004</h1>
+            <div className="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+              <p>
+                We the Foaz-o-Falah Foundation are working for the welfare and prosperity of our beloved country of Pakistan and in this regard we are engaging our workers to give relief to the victims of extremism, and for the rehabilitation of affected peoples from unwanted disaster.
+              </p>
+              <p>
+                We also make efforts for the welfare of low income general public like their education, food, shelter, and clothing. The Foaz-o-Falah Foundation is a registered humanitarian organization operating strictly under the laws of the Government of Pakistan.
+              </p>
+            </div>
           </div>
           <div className="relative aspect-square">
-            <div className="absolute inset-0 bg-primary/5 rounded-full scale-110" />
-            <div className="w-full h-full bg-neutral-surface rounded-2xl overflow-hidden shadow-2xl relative">
-              {/* Introduction Poster Image (Image 3) would go here */}
-              <div className="w-full h-full flex flex-col items-center justify-center p-12 text-center space-y-4">
-                 <div className="text-primary font-serif italic text-3xl">Introduction & Aims</div>
-                 <div className="text-neutral/40 text-sm">Poster Image 3 Placement</div>
-              </div>
+            <div className="absolute inset-0 bg-primary/5 rounded-full scale-110 blur-3xl opacity-50" />
+            <div className="w-full h-full bg-surface-container-low rounded-2xl overflow-hidden shadow-2xl relative">
+              <Image 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm4eb_ELTZY2eQ4uPd3Of0WHcyOlfoayd2YKDp7wOksTvzrH_dMkyBrx9oUjXmu521lL32AvpllWyobekQ_3Y32HjQ9OlUFfTCnZskAE2LaRa7sqZN0Ap8sT-sqjs01DPcYzVKTFFew0s5CoPtYGi8rhireDCm0N9Xcey3poZSCO8QM8iUbO3iIWJQBLshLfx9IeB_BKJ--yI251dgHdh5uHmSRA1GGFjOfIl47AHW0jLq0ePwR3NDqmdXXmHubnvUbw3DNgehSdo"
+                alt="Foaz-o-Falah Foundation Mission"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="bg-neutral-surface py-24 mb-24">
+      <section className="bg-surface-container py-24 mb-24 shadow-inner">
         <div className="section-container grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-white p-12 rounded-3xl shadow-sm border border-neutral-outline/5 space-y-6">
-            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary">
+          <div className="bg-white p-12 shadow-sm border border-outline-variant space-y-6 group hover:border-primary transition-colors">
+            <div className="w-16 h-16 bg-primary/10 flex items-center justify-center text-primary transition-transform group-hover:scale-110">
               <Target size={32} />
             </div>
-            <h3 className="text-3xl font-serif font-bold">Our Mission</h3>
-            <p className="text-neutral/60 leading-relaxed">
+            <h3 className="text-3xl font-bold text-on-surface">Our Mission</h3>
+            <p className="text-on-surface-variant text-lg leading-relaxed">
               To empower the vulnerable and marginalized communities of Pakistan through sustainable relief, 
               healthcare, and education initiatives, fostering resilience and self-reliance.
             </p>
           </div>
-          <div className="bg-white p-12 rounded-3xl shadow-sm border border-neutral-outline/5 space-y-6">
-            <div className="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary">
+          <div className="bg-white p-12 shadow-sm border border-outline-variant space-y-6 group hover:border-secondary transition-colors">
+            <div className="w-16 h-16 bg-secondary/10 flex items-center justify-center text-secondary transition-transform group-hover:scale-110">
               <Eye size={32} />
             </div>
-            <h3 className="text-3xl font-serif font-bold">Our Vision</h3>
-            <p className="text-neutral/60 leading-relaxed">
+            <h3 className="text-3xl font-bold text-on-surface">Our Vision</h3>
+            <p className="text-on-surface-variant text-lg leading-relaxed">
               A prosperous Pakistan where every individual, regardless of their background, has access 
               to dignity, justice, and the resources needed to thrive in peace and harmony.
             </p>
@@ -66,33 +73,37 @@ export default function About() {
 
       {/* Aims & Objectives */}
       <section className="section-container mb-24">
-        <h2 className="text-4xl font-serif font-bold text-center mb-16">Aims & Objectives</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="text-center mb-16">
+          <span className="text-primary text-sm font-bold tracking-[0.2em] mb-4 block">GOALS</span>
+          <h2 className="text-4xl md:text-5xl font-bold">Aims & Objectives</h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {aims.map((aim, i) => (
-            <div key={i} className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-sm border border-neutral-outline/5">
-              <CheckCircle2 className="text-accent shrink-0 mt-1" size={20} />
-              <p className="text-neutral/70 text-sm leading-relaxed">{aim}</p>
+            <div key={i} className="flex items-start space-x-4 p-8 bg-white border border-outline-variant hover:shadow-lg transition-all">
+              <CheckCircle2 className="text-tertiary shrink-0 mt-1" size={24} />
+              <p className="text-on-surface-variant text-base leading-relaxed">{aim}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Founder's Vision (CEO Mention) */}
-      <section className="bg-neutral text-white py-24 rounded-[40px] section-container">
-        <div className="max-w-4xl mx-auto text-center space-y-12">
+      {/* Founder's Vision */}
+      <section className="bg-on-background text-white py-24 section-container relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+        <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
           <div className="space-y-4">
-            <h2 className="text-4xl font-serif font-bold">Founder&apos;s Vision</h2>
-            <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
+            <h2 className="text-4xl md:text-5xl font-bold">Founder&apos;s Vision</h2>
+            <div className="w-24 h-1 bg-primary mx-auto" />
           </div>
-          <blockquote className="text-2xl md:text-3xl font-serif italic leading-relaxed opacity-90">
-            &quot;True success lies not in what we acquire, but in the lives we touch and the hope we restore to those 
-            who have lost everything. Our foundation is built on the principle of service without 
-            discrimination, because every human soul deserves dignity.&quot;
+          <blockquote className="text-2xl md:text-4xl font-serif italic leading-relaxed opacity-90">
+            &quot;The best of people are those that are most useful to people.&quot;
           </blockquote>
           <div className="flex flex-col items-center">
-            <div className="w-20 h-20 bg-primary-container rounded-full mb-4 border-2 border-white/20" />
-            <h4 className="text-xl font-bold uppercase tracking-widest">Aziz-ur-Rehman</h4>
-            <p className="text-primary-container font-medium text-sm">CEO & Founder, Foaz-o-Falah Foundation</p>
+            <div className="w-24 h-24 bg-surface-container rounded-full mb-6 border-4 border-white/20 flex items-center justify-center overflow-hidden">
+               <Users2 size={40} className="text-on-surface opacity-30" />
+            </div>
+            <h4 className="text-2xl font-bold tracking-widest uppercase">Aziz-ur-Rehman</h4>
+            <p className="text-primary font-bold mt-2">CEO & Founder, Foaz-o-Falah Foundation</p>
           </div>
         </div>
       </section>

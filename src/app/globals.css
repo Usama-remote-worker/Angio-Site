@@ -1,34 +1,51 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #E1251B;
-  --color-primary-dark: #bb0004;
-  --color-primary-container: #ffdad5;
-  --color-secondary: #1F6FB2;
-  --color-secondary-dark: #0061a3;
-  --color-secondary-container: #d1e4ff;
-  --color-accent: #2E9E4F;
-  --color-accent-dark: #006a2c;
-  --color-accent-container: #8cfa9f;
-  --color-neutral: #1A1A1A;
-  --color-neutral-surface: #fcf9f8;
-  --color-neutral-outline: #926f69;
+  /* Colors from Stitch Design */
+  --color-primary: #bb0004;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #e1251b;
+  --color-on-primary-container: #fffbfa;
+  --color-primary-fixed: #ffdad5;
+  --color-primary-fixed-dim: #ffb4a9;
   
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-secondary: #0061a3;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #76b8ff;
+  --color-on-secondary-container: #00487a;
   
+  --color-tertiary: #006a2c;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #02863a;
+  --color-on-tertiary-container: #f2ffef;
+  
+  --color-background: #fcf9f8;
+  --color-on-background: #1c1b1b;
+  
+  --color-surface: #fcf9f8;
+  --color-on-surface: #1c1b1b;
+  --color-surface-variant: #e5e2e1;
+  --color-on-surface-variant: #5d3f3b;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container: #f0eded;
+  --color-surface-container-high: #eae7e7;
+  --color-surface-container-highest: #e5e2e1;
+  
+  --color-outline: #926f69;
+  --color-outline-variant: #e7bdb7;
+  
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  
+  /* Fonts */
   --font-serif: var(--font-newsreader), serif;
   --font-sans: var(--font-public-sans), sans-serif;
   
-  --spacing-stack-lg: 64px;
-  --spacing-stack-md: 32px;
+  /* Spacing */
   --spacing-stack-sm: 16px;
-  
-  --radius-sm: 0.125rem;
-  --radius-default: 0.25rem;
-  --radius-md: 0.375rem;
-  --radius-lg: 0.5rem;
-  --radius-xl: 0.75rem;
+  --spacing-stack-md: 32px;
+  --spacing-stack-lg: 64px;
 }
 
 :root {
@@ -38,28 +55,31 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-on-background font-sans antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3 {
     @apply font-serif;
   }
 }
 
 @layer components {
   .section-container {
-    @apply max-w-[1200px] mx-auto px-4 md:px-6;
+    @apply max-w-7xl mx-auto px-8 w-full;
   }
 
   .btn-primary {
-    @apply bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-dark transition-colors;
-  }
-
-  .btn-secondary {
-    @apply bg-secondary text-white px-6 py-3 rounded-md font-semibold hover:bg-secondary-dark transition-colors;
+    @apply bg-primary hover:bg-primary-container text-on-primary px-8 py-4 font-sans font-semibold transition-colors;
   }
 
   .btn-outline {
-    @apply border-2 border-primary text-primary px-6 py-3 rounded-md font-semibold hover:bg-primary hover:text-white transition-all;
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-on-primary px-8 py-4 font-sans font-semibold transition-all;
   }
+}
+
+/* Bento Grid Utility */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
 }
