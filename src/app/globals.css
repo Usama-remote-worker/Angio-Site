@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #E1251B;
+  --color-primary-dark: #bb0004;
+  --color-primary-container: #ffdad5;
+  --color-secondary: #1F6FB2;
+  --color-secondary-dark: #0061a3;
+  --color-secondary-container: #d1e4ff;
+  --color-accent: #2E9E4F;
+  --color-accent-dark: #006a2c;
+  --color-accent-container: #8cfa9f;
+  --color-neutral: #1A1A1A;
+  --color-neutral-surface: #fcf9f8;
+  --color-neutral-outline: #926f69;
+  
+  --font-serif: var(--font-newsreader), serif;
+  --font-sans: var(--font-public-sans), sans-serif;
+  
+  --spacing-stack-lg: 64px;
+  --spacing-stack-md: 32px;
+  --spacing-stack-sm: 16px;
+  
+  --radius-sm: 0.125rem;
+  --radius-default: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+}
+
+:root {
+  --background: #fcf9f8;
+  --foreground: #1c1b1b;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-[1200px] mx-auto px-4 md:px-6;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-dark transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-md font-semibold hover:bg-secondary-dark transition-colors;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-md font-semibold hover:bg-primary hover:text-white transition-all;
+  }
+}
