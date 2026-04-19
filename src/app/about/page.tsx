@@ -35,8 +35,8 @@ export default function About() {
             <div className="absolute inset-0 bg-primary/5 rounded-full scale-110 blur-3xl opacity-50" />
             <div className="w-full h-full bg-surface-container-low rounded-2xl overflow-hidden shadow-2xl relative">
               <Image 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm4eb_ELTZY2eQ4uPd3Of0WHcyOlfoayd2YKDp7wOksTvzrH_dMkyBrx9oUjXmu521lL32AvpllWyobekQ_3Y32HjQ9OlUFfTCnZskAE2LaRa7sqZN0Ap8sT-sqjs01DPcYzVKTFFew0s5CoPtYGi8rhireDCm0N9Xcey3poZSCO8QM8iUbO3iIWJQBLshLfx9IeB_BKJ--yI251dgHdh5uHmSRA1GGFjOfIl47AHW0jLq0ePwR3NDqmdXXmHubnvUbw3DNgehSdo"
-                alt="Foaz-o-Falah Foundation Mission"
+                src="/images/compassion.jpg"
+                alt="Foundation worker providing relief to a child"
                 fill
                 className="object-cover"
               />
@@ -99,8 +99,13 @@ export default function About() {
             &quot;The best of people are those that are most useful to people.&quot;
           </blockquote>
           <div className="flex flex-col items-center">
-            <div className="w-24 h-24 bg-surface-container rounded-full mb-6 border-4 border-white/20 flex items-center justify-center overflow-hidden">
-               <Users2 size={40} className="text-on-surface opacity-30" />
+            <div className="w-24 h-24 bg-surface-container rounded-full mb-6 border-4 border-white/20 flex items-center justify-center overflow-hidden relative">
+               <Image 
+                  src="/images/relief-carry.jpg"
+                  alt="CEO vision icon"
+                  fill
+                  className="object-cover"
+               />
             </div>
             <h4 className="text-2xl font-bold tracking-widest uppercase">Aziz-ur-Rehman</h4>
             <p className="text-primary font-bold mt-2">CEO & Founder, Foaz-o-Falah Foundation</p>

@@ -129,6 +129,49 @@ export default function Services() {
           </div>
         </div>
       </section>
+      {/* Impact Gallery */}
+      <section className="section-container mb-24">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+          <div className="max-w-xl">
+             <h2 className="text-4xl font-bold mb-4">Our Impact in Action</h2>
+             <p className="text-on-surface-variant text-lg">Real-time snapshots from our field operations across Pakistan.</p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+           <div className="relative aspect-[4/3] bg-surface-container-low group overflow-hidden border border-outline-variant">
+              <Image 
+                src="/images/health-camp.jpg"
+                alt="Medical Camp in action"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                 <h4 className="text-white font-bold text-lg">Health Projects</h4>
+                 <p className="text-white/80 text-sm">Providing free medicine and checkups.</p>
+              </div>
+           </div>
+           <div className="relative aspect-[4/3] bg-surface-container-low group overflow-hidden border border-outline-variant">
+              <Image 
+                src="/images/disaster-site.jpg"
+                alt="Disaster Management"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                 <h4 className="text-white font-bold text-lg">Disaster Relief</h4>
+                 <p className="text-white/80 text-sm">Ground workers planning rehabilitation.</p>
+              </div>
+           </div>
+           <div className="relative aspect-[4/3] bg-surface-container-low group overflow-hidden border border-outline-variant hover:border-primary transition-colors flex items-center justify-center p-8 text-center">
+              <div>
+                 <HeartPulse className="w-12 h-12 text-primary mx-auto mb-4" />
+                 <h4 className="text-xl font-bold mb-2">Join the Impact</h4>
+                 <p className="text-on-surface-variant text-sm mb-6">Your contribution saves lives every single day.</p>
+                 <Link href="/donate" className="text-primary font-bold hover:underline">Support Our Work</Link>
+              </div>
+           </div>
+        </div>
+      </section>
     </div>
   );
 }
