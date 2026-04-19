@@ -25,8 +25,8 @@ export default function Home() {
       <section className="relative h-[870px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxSgqwLOh95jJIpkmkBkncRK3uOWaDkT6gEnVoi13J8jJW8gSQZnh8KXbuHZ0l9fo_bxHZGVrVlXgBLleyJkc-6j82FcEAXtW6inFkMi_R6dE36uvnbihQw1B7KfanJVz8hjLv28cjlP-qWkSWtC4PrFMwNwLYX1WHwiOiLDiJN6kIkr4w2_ku0bLudNgErQHJ8CF1REQgpcLb1_rT1laC4-t96AF9q1r5n23a1bG2czuYCzJSpGeUWjjwQ_Q1WFhX8LXlSP1RJIU"
-            alt="Humanitarian aid workers distributing food"
+            src="/images/hero-real.jpg"
+            alt="Humanitarian aid recipient child"
             fill
             className="object-cover brightness-50"
             priority
@@ -83,8 +83,8 @@ export default function Home() {
             <div className="relative">
               <div className="relative aspect-[4/3] w-full overflow-hidden shadow-2xl">
                 <Image 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm4eb_ELTZY2eQ4uPd3Of0WHcyOlfoayd2YKDp7wOksTvzrH_dMkyBrx9oUjXmu521lL32AvpllWyobekQ_3Y32HjQ9OlUFfTCnZskAE2LaRa7sqZN0Ap8sT-sqjs01DPcYzVKTFFew0s5CoPtYGi8rhireDCm0N9Xcey3poZSCO8QM8iUbO3iIWJQBLshLfx9IeB_BKJ--yI251dgHdh5uHmSRA1GGFjOfIl47AHW0jLq0ePwR3NDqmdXXmHubnvUbw3DNgehSdo"
-                  alt="Growth and nurturing mission"
+                  src="/images/mission-real.jpg"
+                  alt="Foundation workers carrying relief materials"
                   fill
                   className="object-cover"
                 />
