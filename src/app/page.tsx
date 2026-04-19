@@ -136,18 +136,36 @@ export default function Home() {
               </div>
             </div>
             {/* Sector 2 */}
-            <div className="col-span-12 md:col-span-4 bg-secondary p-8 text-white flex flex-col justify-between min-h-[300px]">
-              <GraduationCap className="w-12 h-12" />
-              <div>
+            <div className="col-span-12 md:col-span-4 bg-secondary p-8 text-white flex flex-col justify-between min-h-[300px] relative overflow-hidden group">
+              <div className="absolute inset-0 opacity-20 transition-transform duration-500 group-hover:scale-110">
+                <Image 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm4eb_ELTZY2eQ4uPd3Of0WHcyOlfoayd2YKDp7wOksTvzrH_dMkyBrx9oUjXmu521lL32AvpllWyobekQ_3Y32HjQ9OlUFfTCnZskAE2LaRa7sqZN0Ap8sT-sqjs01DPcYzVKTFFew0s5CoPtYGi8rhireDCm0N9Xcey3poZSCO8QM8iUbO3iIWJQBLshLfx9IeB_BKJ--yI251dgHdh5uHmSRA1GGFjOfIl47AHW0jLq0ePwR3NDqmdXXmHubnvUbw3DNgehSdo"
+                  alt="Education for all"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative z-10">
+                <GraduationCap className="w-12 h-12 mb-4" />
                 <h3 className="text-3xl font-bold mb-2">Education</h3>
                 <p className="opacity-90 leading-relaxed">Providing school supplies and scholarships to bright minds in need.</p>
               </div>
             </div>
             {/* Sector 3 */}
-            <div className="col-span-12 md:col-span-4 bg-white p-8 border-t-4 border-tertiary shadow-sm">
-              <Wrench className="text-tertiary w-12 h-12 mb-4" />
-              <h3 className="text-3xl font-bold mb-2">Technical Training</h3>
-              <p className="text-on-surface-variant">Vocational centers empowering youth with modern employability skills.</p>
+            <div className="col-span-12 md:col-span-4 bg-white p-8 border-t-4 border-tertiary shadow-sm relative overflow-hidden group">
+              <div className="absolute inset-0 opacity-10 transition-transform duration-500 group-hover:scale-110">
+                <Image 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa9nE6GKXOGUJtW3Wl-hefudJOjPa4nMXSPw1Zw7iUcN2389GpLVbvT_g1NaxfY-aJ5JvkfhC3_5giC-Lfu7bc4qXAdOw_q82Zqh4B6lqdOAiOMyiylq_ETPfnzhtiSrO3LfLDyGPiOy-0vWLSPlnby-hMAKnc0WzrDiOJbLY2yu0SjIX_Fb3zToz364KFOqFg6WqZ5veLOu8-55veisl2IIFE_gj30mqjlPDh3dYkR1aanmNEUPdYi_aYHyr06HQ9iRhArjHCSdU"
+                  alt="Technical Training"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative z-10">
+                <Wrench className="text-tertiary w-12 h-12 mb-4" />
+                <h3 className="text-3xl font-bold mb-2">Technical Training</h3>
+                <p className="text-on-surface-variant">Vocational centers empowering youth with modern employability skills.</p>
+              </div>
             </div>
             {/* Sector 4 */}
             <div className="col-span-12 md:col-span-8 bg-white p-8 group relative overflow-hidden flex items-center shadow-sm">
