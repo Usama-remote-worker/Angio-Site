@@ -1,63 +1,11 @@
-@import "tailwindcss";
-
-@theme {
-  /* Colors from Stitch Design */
-  --color-primary: #bb0004;
-  --color-on-primary: #ffffff;
-  --color-primary-container: #e1251b;
-  --color-on-primary-container: #fffbfa;
-  --color-primary-fixed: #ffdad5;
-  --color-primary-fixed-dim: #ffb4a9;
-  
-  --color-secondary: #0061a3;
-  --color-on-secondary: #ffffff;
-  --color-secondary-container: #76b8ff;
-  --color-on-secondary-container: #00487a;
-  
-  --color-tertiary: #006a2c;
-  --color-on-tertiary: #ffffff;
-  --color-tertiary-container: #02863a;
-  --color-on-tertiary-container: #f2ffef;
-  
-  --color-background: #fcf9f8;
-  --color-on-background: #1c1b1b;
-  
-  --color-surface: #fcf9f8;
-  --color-on-surface: #1c1b1b;
-  --color-surface-variant: #e5e2e1;
-  --color-on-surface-variant: #5d3f3b;
-  --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f6f3f2;
-  --color-surface-container: #f0eded;
-  --color-surface-container-high: #eae7e7;
-  --color-surface-container-highest: #e5e2e1;
-  
-  --color-outline: #926f69;
-  --color-outline-variant: #e7bdb7;
-  
-  --color-error: #ba1a1a;
-  --color-on-error: #ffffff;
-  
-  /* Fonts */
-  --font-serif: var(--font-newsreader), serif;
-  --font-sans: var(--font-public-sans), sans-serif;
-  
-  /* Spacing */
-  --spacing-stack-sm: 16px;
-  --spacing-stack-md: 32px;
-  --spacing-stack-lg: 64px;
-}
-
-:root {
-  --background: #fcf9f8;
-  --foreground: #1c1b1b;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   body {
-    @apply bg-background text-on-background font-sans antialiased;
+    @apply bg-[#fcf9f8] text-[#1c1b1b] font-sans antialiased;
   }
-
   h1, h2, h3 {
     @apply font-serif;
   }
@@ -67,19 +15,10 @@
   .section-container {
     @apply max-w-7xl mx-auto px-8 w-full;
   }
-
   .btn-primary {
-    @apply bg-primary hover:bg-primary-container text-on-primary px-8 py-4 font-sans font-semibold transition-colors;
+    @apply bg-[#bb0004] hover:bg-[#e1251b] text-white px-8 py-4 font-sans font-semibold transition-colors;
   }
-
-  .btn-outline {
-    @apply border-2 border-primary text-primary hover:bg-primary hover:text-on-primary px-8 py-4 font-sans font-semibold transition-all;
+  .bento-grid {
+    @apply grid grid-cols-12 gap-6;
   }
-}
-
-/* Bento Grid Utility */
-.bento-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 24px;
 }
