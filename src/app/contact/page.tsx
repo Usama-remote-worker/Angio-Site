@@ -64,27 +64,30 @@ export default function Contact() {
                   </div>
                 </div>
               ))}
-            <div className="pt-12 border-t border-outline-variant space-y-6">
-              <h4 className="font-bold text-on-surface text-lg uppercase tracking-widest">Connect With Us</h4>
-              <div className="flex gap-4">
-                <a 
-                  href="https://www.facebook.com/foazofalah" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 bg-surface-container-low px-6 py-3 hover:bg-primary hover:text-white transition-all group"
-                >
-                  <Facebook size={20} className="text-primary group-hover:text-white" />
-                  <span className="font-bold text-sm">Facebook</span>
-                </a>
-                <a 
-                  href="https://www.youtube.com/@foazofalahfoundation" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 bg-surface-container-low px-6 py-3 hover:bg-primary hover:text-white transition-all group"
-                >
-                  <Youtube size={20} className="text-primary group-hover:text-white" />
-                  <span className="font-bold text-sm">YouTube</span>
-                </a>
+              
+              {/* Added the missing Connect With Us section properly nested */}
+              <div className="pt-12 border-t border-outline-variant space-y-6">
+                <h4 className="font-bold text-on-surface text-lg uppercase tracking-widest">Connect With Us</h4>
+                <div className="flex gap-4">
+                  <a 
+                    href="https://www.facebook.com/foazofalah" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 bg-surface-container-low px-6 py-3 hover:bg-primary hover:text-white transition-all group"
+                  >
+                    <Facebook size={20} className="text-primary group-hover:text-white" />
+                    <span className="font-bold text-sm">Facebook</span>
+                  </a>
+                  <a 
+                    href="https://www.youtube.com/@foazofalahfoundation" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 bg-surface-container-low px-6 py-3 hover:bg-primary hover:text-white transition-all group"
+                  >
+                    <Youtube size={20} className="text-primary group-hover:text-white" />
+                    <span className="font-bold text-sm">YouTube</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -166,7 +169,6 @@ export default function Contact() {
           <div className="absolute inset-0 bg-surface-container-low flex items-center justify-center text-on-surface-variant/30 font-bold tracking-widest text-2xl z-0">
              LOADING INTERACTIVE MAP...
           </div>
-          {/* We'll use the placeholder image for map as well for now */}
           <div className="absolute inset-0">
             <img 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuADO4vMzcqfZ_rlEOyw-UyJNyuPYU42UZw8cftHWfmDaNHA0ELVsup5Sf2VfYkGa4z6XKLOXpB9W8qR7zroBkiiSwPeQ2ChOnSAT5JQzLtnapjN3FVLyJP0vfe4yTvFKpnoDEpmF_OdGdgSD1rfa0OFCI5uBH_0PW-qTi9JLw0IJqiKNDZYHxm4sb9TDstVm6VOGOvGjxaBcKUySOs69g9rOg_MSIYZD8BAzAIRz2lwg3xhUKYyN8WrR22NLpeK2yweblzAhv2TiqQ"
